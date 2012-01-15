@@ -32,7 +32,7 @@ class Data
 
 	function save() {
 
-		if ( ! file_exists ( BASE_PATH ) . '/data/' ) {
+		if ( ! is_dir ( BASE_PATH . '/data/') ) {
 			mkdir ( BASE_PATH . '/data/' );
 		}
 
