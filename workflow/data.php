@@ -31,6 +31,11 @@ class Data
 	}
 
 	function save() {
+
+		if ( ! file_exists ( BASE_PATH ) . '/data/' ) {
+			mkdir ( BASE_PATH . '/data/' );
+		}
+
 		$data_file = BASE_PATH . '/data/flowdata.dat';
 		global $data;
 		file_put_contents( $data_file, json_encode($data) );
