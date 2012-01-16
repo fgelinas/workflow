@@ -6,7 +6,7 @@
 			$content = htmlentities( $content, ENT_NOQUOTES );
 			$content = str_replace( "\n", '<br>', $content );
 
-			$content = preg_replace("#\"(.+)\"\:((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#ie",
+			$content = preg_replace("#\"([^\"]+)\"\:((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#ie",
 				"'<a href=\"$2\" target=\"_blank\">$1</a>$5'",
 				$content
 			);

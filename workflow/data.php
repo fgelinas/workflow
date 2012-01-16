@@ -91,13 +91,13 @@ class Data
 					'id'      	=> 5,
 					'column_id'	=> 2,
 					'order'		=> 1,
-					'content' => 'Fix this and that'
+					'content' => 'Drag a card to the bottom of the screen to delete id'
 				),
 				array(
 					'id'      	=> 6,
 					'column_id'	=> 2,
 					'order'		=> 2,
-					'content' 	=> 'This task is taking forever ...'
+					'content' 	=> "URL are parsed as links and you can prefix them with \"name\": to shorten the link\nex: \"Frank's website\":http://fgelinas.com"
 				),
 				array(
 					'id'		=> 7,
