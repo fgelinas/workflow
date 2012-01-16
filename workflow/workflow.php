@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * Workflow project
+ * By Francois Gelinas
+ * January 2012
+ *
+ * This project is licensed under both the MIT and GPL license
+ */
+
 include 'render.php'; // rendering class
 include 'data.php';
 include 'cards.php';
