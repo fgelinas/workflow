@@ -28,6 +28,7 @@ class Data
 		$data->columns = (array) $data->columns;
 		$data->cards = (array) $data->cards;
 
+		return true;
 	}
 
 	function save() {
@@ -66,7 +67,7 @@ class Data
 					'id'      	=> 1,
 					'column_id'	=> 1,
 					'order'		=> 1,
-					'content'	=> 'Hello, this is Workflow, a 3 column tool to organization your work or stuff'
+					'content'	=> 'Hello, this is Workflow, a 3 column tool to organize your work or stuff'
 				),
 				array(
 					'id'     	=> 2,
@@ -90,7 +91,7 @@ class Data
 					'id'      	=> 5,
 					'column_id'	=> 2,
 					'order'		=> 1,
-					'content' => 'Buy some milk'
+					'content' => 'Fix this and that'
 				),
 				array(
 					'id'      	=> 6,
@@ -100,9 +101,15 @@ class Data
 				),
 				array(
 					'id'		=> 7,
-					'column_id'	=> 2,
-					'order'		=> 3,
-					'content'	=> 'Why The Face?'
+					'column_id'	=> 3,
+					'order'		=> 2,
+					'content'	=> 'Make pancakes.'
+				),
+				array(
+					'id'		=> 8,
+					'column_id'	=> 3,
+					'order'		=> 1,
+					'content'	=> 'Drag a card to the bottom of the screen to delete it'
 				)
 			)
 
